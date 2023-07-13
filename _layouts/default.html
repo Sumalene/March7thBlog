@@ -48,35 +48,8 @@
 
 </body>
 
-<div class="bg"></div>
-<!-- 添加一个淡蓝色粉色渐变的的背景 ,伪背景,所有层级最底,代码直接实现如下-->
-<style>
-  .bg{
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: -1;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(135deg, rgb(72, 225, 225) 0%, rgba(255, 173, 187, 0.99) 100%);
-    background-size: 400% 400%;
-    animation: moveBg 13s linear infinite;
-  }
-  @keyframes moveBg{
-    0%{
-      background-position: 0% 50%;
-    }
-    50%{
-      background-position: 100% 50%;
-    }
-    100%{
-      background-position: 0% 50%;
-    }
-  }
 
-</style>
-
-  <!-- 引用 Live2D 核心组件 -->
+<!-- 引用 Live2D 核心组件 -->
 <script src='https://jsdelivr.codeqihan.com/gh/fat-old-eight/fat-old-eight.github.io@main/assets/static/l2d.js'></script>
 <!-- 引用看板娘交互组件 -->
 <script src='https://jsdelivr.codeqihan.com/gh/fat-old-eight/fat-old-eight.github.io@main/assets/static/pio.js'></script>
@@ -159,5 +132,34 @@
         else document.getElementById("1!5!").innerHTML="Wrong Answer";
     }
 </script>
+
+<div class="bg"></div>
+<!-- 添加一个淡蓝色粉色渐变的的背景 ,伪背景,所有层级最底,代码直接实现如下-->
+<style>
+  .bg{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, rgb(72, 225, 225) 0%, rgba(255, 173, 187, 0.99) 100%);
+    background-size: 400% 400%;
+    animation: moveBg 13s linear infinite;
+  }
+  @keyframes moveBg{
+    0%{
+      background-position: 0% 50%;
+    }
+    50%{
+      background-position: 100% 50%;
+    }
+    100%{
+      background-position: 0% 50%;
+    }
+  }
+
+</style>
+
 
 </html>
