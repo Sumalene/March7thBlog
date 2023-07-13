@@ -75,63 +75,7 @@
         "tips": true
     });
 </script>
-<script>
-    function Delete()
-    {
-        document.getElementById("SB").remove();
-        document.getElementById("lock").remove();
-        document.getElementById("password").remove();
-        for(let j=1;1;j++)
-        {
-            let num="114514"+j.toString();
-            let Ans="ans"+j.toString();
-            let check=document.getElementById(Ans);
-            if(check==null)break;
-            let an=document.getElementById(Ans).innerHTML;
-            document.getElementById(Ans).remove();
-            document.getElementById(num).remove();
-        }
-    }
-    function myFunction()
-    {
-        let sss=document.getElementById("lock").value;
-        let hash=CryptoJS.SHA1(sss);
-        let password=document.getElementById("password").innerHTML;
-        for(let i=1;1;i++)
-        {
-            let num="114514"+i.toString();
-            let Ans="ans"+i.toString();
-            let check=document.getElementById(Ans);
-            if(check==null)break;
-            let ans=document.getElementById(Ans).innerHTML;
-            let a=document.getElementById(num).innerHTML;
-            if(hash==a)
-            {
-                document.getElementById("1!5!").innerHTML="Accepted";
-                Delete();
-                let aesKey=CryptoJS.MD5(sss);
-                let key = CryptoJS.enc.Utf8.parse(aesKey);
-                aseKey=aesKey.toString();
-                const option = {
-                    iv: CryptoJS.enc.Utf8.parse(aesKey.toString().substring(1, 17)),
-                    mode: CryptoJS.mode.CBC,
-                    padding: CryptoJS.pad.Pkcs7,
-                };
-                let decrypt = CryptoJS.AES.decrypt(ans, key, option);
-                let decryptData = JSON.parse(decrypt.toString(CryptoJS.enc.Utf8));
-                document.getElementById("stdout").innerHTML=decryptData;
-                return;
-            }
-        }
-        if(sss==password)
-        {
-            document.getElementById("1!5!").innerHTML="Accepted";
-            Delete();
-            document.getElementById("stdout").innerHTML="这里没有东西";
-        }
-        else document.getElementById("1!5!").innerHTML="Wrong Answer";
-    }
-</script>
+
 
 <div class="bg"></div>
 <!-- 添加一个淡蓝色粉色渐变的的背景 ,伪背景,所有层级最底,代码直接实现如下-->
