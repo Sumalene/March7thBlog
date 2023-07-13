@@ -49,33 +49,6 @@
 </body>
 
 
-<!-- 引用 Live2D 核心组件 -->
-<script src='https://jsdelivr.codeqihan.com/gh/fat-old-eight/fat-old-eight.github.io@main/assets/static/l2d.js'></script>
-<!-- 引用看板娘交互组件 -->
-<script src='https://jsdelivr.codeqihan.com/gh/fat-old-eight/fat-old-eight.github.io@main/assets/static/pio.js'></script>
-
-<div class="pio-container left">
-    <div class="pio-action"></div>
-    <canvas id="pio" width="300" height="300"></canvas>
-</div>
-<script>
-    var pio = new Paul_Pio({
-        "mode": "draggable",
-        "hidden": true,
-        "content": {
-            "welcome": ["欢迎来到保罗的小宇宙！", "今天天气不错，一起来玩吧！", "博主每天都有些折腾记录，欢迎前往他的小窝阅读~"],
-            "custom": [
-                {"selector": ".post-title a", "type": "read"},
-                {"selector": ".post-tags a","type": "DZ"},
-                {"selector": ".common-list a","type": "link"},
-                {"selector": ".trigger a","type": "DZ"}
-            ]
-        },
-        "model": ["https://jsdelivr.codeqihan.com/gh/fat-old-eight/fat-old-eight.github.io@main/assets/models/pio/model.json"],
-        "tips": true
-    });
-</script>
-
 
 <div class="bg"></div>
 <!-- 添加一个淡蓝色粉色渐变的的背景 ,伪背景,所有层级最底,代码直接实现如下-->
