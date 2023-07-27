@@ -9,7 +9,24 @@ sidebar:
 nav : "docs"
 ---
 
-<img src="/assets/images/back.jpg" style="width: 100%;">
+<!-- <img src="/assets/images/back.jpg" style="width: 100%;"> -->
+
+<img id="background" src="https://act-upload.mihoyo.com/bh3-wiki/2023/07/24/75216984/cf823206e250d53a2b47c293d8cc99bc_65467554493967389.png" style="width: 100%;">
+   <script>
+    var imageUrls = [
+      "https://act-upload.mihoyo.com/bh3-wiki/2023/07/24/75216984/cf823206e250d53a2b47c293d8cc99bc_65467554493967389.png",
+      "https://uploadstatic.mihoyo.com/bh3-wiki/2023/02/10/75216984/84d61b99a2f03fb4d319666ccda6ec10_2315201836956440405.png",
+      "https://uploadstatic.mihoyo.com/bh3-wiki/2022/03/23/75216984/4dee0fc629e9944d9fe337f96752fd5b_1366120790552635929.jpg",
+      // 添加更多图像URL
+    ];
+     function changeBackgroundImage() {
+      var imgElement = document.getElementById("background");
+      var randomIndex = Math.floor(Math.random() * imageUrls.length);
+      imgElement.src = imageUrls[randomIndex];
+    }
+     changeBackgroundImage(); // 初始设置背景图像
+     setInterval(changeBackgroundImage, 30000); // 每十分钟更换一次背景图像
+  </script>
 
 <div class="bg"></div>
 <!-- 添加一个淡蓝色粉色渐变的的背景 ,伪背景,所有层级最底,代码直接实现如下-->
