@@ -12,6 +12,8 @@ main:
     url: /categories/
   - title: "About"
     url: /about/
+  - title: "travel"
+    url: https://travellings.cn/go.html
 
 docs:
   - title: Web
