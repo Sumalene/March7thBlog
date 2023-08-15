@@ -24,7 +24,7 @@ description: "个人日志"
 url: https://sumalene.github.io/
 baseurl: # the subpath of your site, e.g. "/blog"
 repository: "Sumalene/March7thBlog/"
-# teaser: "./assets/images/teaser.png" ,这个是首页的图片
+teaser: "https://uploadstatic.mihoyo.com/bh3-wiki/2023/02/08/75216984/97ec2009b25378d34ebcf13c62fe089f_8096765097750935808.png" #,这个是首页的图片
 logo: "./assets/images/blog.png"
 masthead_title: # overrides the website title displayed in the masthead, use " " for no title
 readcrumbs            : false # true, false (default)
