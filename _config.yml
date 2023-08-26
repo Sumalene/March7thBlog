@@ -282,5 +282,6 @@ defaults:
       toc: true
       toc_label:
       toc_sticky: true
-      sidebar: right
+      sidebar:
         nav: "docs"
+        position: right
